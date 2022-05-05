@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".Signup_Fragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_rounded_edittext"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="#1D2226"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/signup_username"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_rounded_edittext"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAllCaps="false"
+        android:textColor="#1D2226"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/signup_email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_rounded_edittext"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_rounded_button"
+        android:text="CREATE ACCOUNT"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
